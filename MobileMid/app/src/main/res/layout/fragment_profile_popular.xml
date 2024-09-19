@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/top_bar_popular"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back_popular"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back"
+            app:tint="#00BFFF" />
+
+        <!-- Back Text -->
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="18sp"
+            android:textColor="#00BFFF"
+            android:paddingStart="8dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <ImageView
+            android:id="@+id/open_setting"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="Settings"
+            app:tint="#00BFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/furina"
+            android:contentDescription="Profile Image"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="haise-dev"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tv_repo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mobiledev2024"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_star"
+                app:tint="#B0B0B0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="0 stars"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_fork"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="0 forks"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="1dp"
+                android:src="@drawable/ic_fork" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Forked from SonTG/mobiledev2024"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button_background">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_star"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Star"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_bell"
+            android:background="@drawable/rounded_button_background"
+            android:padding="8dp"
+            android:layout_marginStart="8dp"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:background="@color/dark_gray"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/action" />
+
+        <TextView
+            android:id="@+id/open_action"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Action"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/arrow_ex" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="52dp"
+            android:alpha="0.5"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/pull" />
+
+        <TextView
+            android:id="@+id/open_pull"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="66dp"
+            android:text="Pull Requests"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/arrow_ex" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="113dp"
+            android:background="@drawable/more" />
+
+        <TextView
+            android:id="@+id/open_more"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="116dp"
+            android:text="More"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="123dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/arrow_ex" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="102dp"
+            android:alpha="0.5"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/repo1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="main"
+            android:textColor="#B0B0B0"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="211dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/open_branch"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="Change branch"
+            android:textColor="#00BFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:background="@color/dark_gray">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/ic_code" />
+
+        <TextView
+            android:id="@+id/open_code"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Code"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/arrow_ex" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="52dp"
+            android:alpha="0.5"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/ic_commits" />
+
+        <TextView
+            android:id="@+id/open_commits"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="66dp"
+            android:text="Commits"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/arrow_ex" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

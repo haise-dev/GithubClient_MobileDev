@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <!-- Top bar filling the width and staying on top -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/dark_gray"
+        android:padding="8dp">
+
+        <!-- Cancel Button -->
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:layout_marginStart="8dp" />
+
+        <!-- Title Text (Center aligned) -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit your current status"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <!-- Save Button -->
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext_background"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/smile"
+            android:layout_marginEnd="8dp"
+            app:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="260dp"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:hint="Set your status"
+            android:textColorHint="@color/gray_text"
+            android:background="@android:color/transparent"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- LinearLayout to wrap the new section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Remaining characters text -->
+        <TextView
+            android:id="@+id/tv_char_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80 characters remaining."
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Container for Busy switch and description -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/dark_gray"
+            android:padding="8dp"
+            android:layout_marginTop="16dp">
+
+            <!-- Busy Text -->
+            <TextView
+                android:id="@+id/tv_busy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Busy"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <!-- Busy Switch -->
+            <Switch
+                android:id="@+id/switch_busy"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:checked="true" />
+        </LinearLayout>
+
+        <!-- Description Text -->
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When others mention you, assign you, or request your review, GitHub will let them know that you have limited availability."
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <!-- LinearLayout to wrap the Clear after and Visibility options -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Container for Clear after... option -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/rounded_status"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <!-- Clear after Text -->
+            <TextView
+                android:id="@+id/tv_clear_after"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear after..."
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <!-- Clear after Dropdown Text -->
+            <TextView
+                android:id="@+id/tv_clear_after_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Never"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:paddingEnd="8dp" />
+        </LinearLayout>
+
+        <!-- Container for Visibility option -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/rounded_status"
+            android:padding="16dp"
+            android:layout_marginTop="8dp">
+
+            <!-- Visibility Text -->
+            <TextView
+                android:id="@+id/tv_visibility"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Visibility"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <!-- Visibility Dropdown Text -->
+            <TextView
+                android:id="@+id/tv_visibility_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Everyone"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:paddingEnd="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

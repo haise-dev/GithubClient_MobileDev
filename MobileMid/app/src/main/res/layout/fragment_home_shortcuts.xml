@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#111111">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:padding="0dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/graphite_gray"
+                android:text="Cancel"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Shortcuts"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/graphite_gray"
+                android:text="Done"
+                android:textColor="@color/light_blue"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_layout">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add" />
+
+        <TextView
+            android:id="@+id/create_new_shortcut"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Create New Shortcut"
+            android:textColor="#0a93e2"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/suggested_shortcuts"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="40dp"
+        android:text="SUGGESTED SHORTCUTS"
+        android:textColor="#333333"
+        android:layout_marginLeft="17dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:background="@drawable/rounded_layout"
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp">
+
+            <LinearLayout
+                android:id="@+id/mentioned"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:background="#333333"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/img_button_mentioned"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/apc"
+                    android:contentDescription="image"/>
+
+                <ImageView
+                    android:id="@+id/img_view_mentioned"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/im" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp">
+
+                    <TextView
+                        android:id="@+id/issues_mentioned"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:text="Issues"
+                        android:textColor="#AAAAAA"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/issues_mentioned"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Mentioned"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/assigned"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@+id/mentioned"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="17dp"
+                android:background="#333333"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/img_button_assigned"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/apc"
+                    android:contentDescription="image"/>
+
+                <ImageView
+                    android:id="@+id/img_view_assigned"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ia" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp">
+
+                    <TextView
+                        android:id="@+id/issues_assigned"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:text="Issues"
+                        android:textColor="#AAAAAA"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/issues_assigned"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Assigned"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reviewrequest"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@+id/assigned"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="17dp"
+                android:background="#333333"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/img_button_review_request"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/apc"
+                    android:contentDescription="image"/>
+
+                <ImageView
+                    android:id="@+id/img_view_review_request"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/prrq" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp">
+
+                    <TextView
+                        android:id="@+id/Pull_requested_Review_requested"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:text="Pull Requests"
+                        android:textColor="#AAAAAA"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="184dp"
+                        android:layout_height="39dp"
+                        android:layout_below="@+id/Pull_requested_Review_requested"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-1dp"
+                        android:layout_weight="1"
+                        android:text="Review requested"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+
+    <LinearLayout
+        android:id="@+id/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/back_home">
+
+            <TextView
+                android:id="@+id/pull_home"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:minWidth="48dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/arrow"
+                android:focusable="true"
+                android:text="Home"
+                android:textColor="#4285F4"
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Pull Requests"
+            android:textColor="@color/dark_white"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_button"
+            android:drawableLeft="@drawable/magnifying_glass"
+            android:drawablePadding="10dp"
+            android:hint="Search"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#999999"
+            android:textSize="18sp" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/scrollViewFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_gray"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <Button
+                    android:id="@+id/filterOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pill_button"
+                    android:text="Open"
+                    android:textColor="@color/ligth_gray" />
+
+                <Button
+                    android:id="@+id/filterCreatedByMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pill_button"
+                    android:text="Created by me"
+                    android:textColor="@color/ligth_gray" />
+
+                <Button
+                    android:id="@+id/filterVisibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pill_button"
+                    android:text="Visibility"
+                    android:textColor="@color/ligth_gray" />
+
+                <Button
+                    android:id="@+id/filterOrganization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pill_button"
+                    android:text="Organization"
+                    android:textColor="@color/ligth_gray" />
+
+                <Button
+                    android:id="@+id/filterRepository"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pill_button"
+                    android:text="Repository"
+                    android:textColor="@color/ligth_gray" />
+
+                <Button
+                    android:id="@+id/filterSort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pill_button"
+                    android:text="Sort: Newest"
+                    android:textColor="@color/ligth_gray" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/empty_state_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="No Issues Found"
+                android:background="@drawable/general_picture" />
+
+            <TextView
+                android:id="@+id/no_pullrequests_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="No pull request found"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/instruction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use fewer filters or reset all filters."
+                android:textColor="#888888"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/reset_filters_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:minWidth="48dp"
+                android:text="Reset search filters"
+                android:textColor="#4285F4"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

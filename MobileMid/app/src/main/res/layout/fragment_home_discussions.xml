@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+
+    <!-- Top Section - Gray Background -->
+    <LinearLayout
+        android:id="@+id/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Back Button and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Back Button -->
+            <TextView
+                android:id="@+id/discussion_back"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:minWidth="48dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/arrow"
+                android:focusable="true"
+                android:text="Home"
+                android:textColor="#4285F4"
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+        <!-- Search Bar -->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Discussions"
+            android:textColor="@color/dark_white"
+            android:textSize="35sp" />
+
+        <!-- Horizontal Scroll for Filters -->
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_button"
+            android:drawableLeft="@drawable/magnifying_glass"
+            android:drawablePadding="10dp"
+            android:hint="Search"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#999999"
+            android:textSize="18sp" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/scrollViewFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_gray"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <!-- Filter Buttons -->
+                <Button
+                    android:id="@+id/filterCreatedByMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pill_button"
+                    android:text="Created by me"
+                    android:textColor="@color/ligth_gray" />
+
+                <Button
+                    android:id="@+id/filterUnanswered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pill_button"
+                    android:text="Unanswered"
+                    android:textColor="@color/ligth_gray" />
+
+                <Button
+                    android:id="@+id/filterSort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pill_button"
+                    android:text="Sort:New"
+                    android:textColor="@color/ligth_gray" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!-- Bottom Section - Black Background -->
+    <RelativeLayout
+        android:id="@+id/bottom_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center">
+
+        <!-- Image and Text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <!-- Text for No Issues Found -->
+
+            <ImageView
+                android:id="@+id/empty_state_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="No Issues Found"
+                android:background="@drawable/general_picture" />
+
+            <!-- Instructions -->
+            <TextView
+                android:id="@+id/no_discussions_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="No discussions found"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

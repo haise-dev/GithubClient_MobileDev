@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">home_layout_github</string>
+    <string name="text_favourite">Add favourite repositories here to have quick  access at any time, without having to search</string>
+    <string name="heading_shortcuts">The thing you need, one tap away</string>
+    <string name="text_shortcuts">Fast acccess your lists of Issues, Pull Requests, or Discussions.</string>
+    <string name="text_recent">Issues and Pull Requests that you\'ve interacted with recently will apppear here. </string>
+    <string name="tab_layout_description">Bottom navigation with tabs for home, notifications, explore, and profile</string>
+
+    <!-- Added strings for Profile Status -->
+    <string-array name="clear_after_options">
+        <item>Never</item>
+        <item>1 Hour</item>
+        <item>Today</item>
+        <item>1 Week</item>
+    </string-array>
+
+    <string-array name="visibility_options">
+        <item>Everyone</item>
+        <item>Only Me</item>
+        <item>Team Members</item>
+    </string-array>
+
+    <string name="set_status">Set your status</string>
+    <string name="status_busy">Busy</string>
+    <string name="clear_after">Clear after...</string>
+    <string name="visibility">Visibility</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="char_remaining">80 characters remaining.</string>
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Back Button and Title Layout -->
+    <LinearLayout
+        android:id="@+id/backButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back"
+            app:tint="@android:color/holo_blue_light" />
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/awesome_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Explore"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Awesome Title -->
+    <TextView
+        android:id="@+id/awesomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Awesome Lists"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/backButtonLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Awesome Image -->
+    <ImageView
+        android:id="@+id/awesomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_awesome_image"
+        app:layout_constraintTop_toBottomOf="@id/awesomeTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Description Card -->
+    <LinearLayout
+        android:id="@+id/descriptionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/awesomeImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- User Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sindresorhus / awesome"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- List Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😎 Awesome lists about all kinds of interesting topics"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Stats -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Star Icon and Count -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_star"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="324 665"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="8dp" />
+
+            <!-- Contributor Info -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_contributor"
+                android:layout_marginStart="16dp"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="589 contributors"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Star Button -->
+        <Button
+            android:id="@+id/starButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Star"
+            android:drawableStart="@drawable/ic_star"
+            android:backgroundTint="@color/dark_gray"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
