@@ -26,10 +26,8 @@ public class HomeShortcutsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home_shortcuts,container, false);
 
-        // Initialize Views
         btnCancel = view.findViewById(R.id.btn_cancel);
         btnDone = view.findViewById(R.id.btn_done);
         title = view.findViewById(R.id.title);
@@ -49,25 +47,19 @@ public class HomeShortcutsFragment extends Fragment {
         imgViewAssigned = view.findViewById(R.id.img_view_assigned);
         imgViewReviewRequest = view.findViewById(R.id.img_view_review_request);
 
-        // Setup onClickListeners
         btnCancel.setOnClickListener(v -> {
-            // Handle Cancel Button Click
         });
 
         btnDone.setOnClickListener(v -> {
-            // Handle Done Button Click
         });
 
         mentioned.setOnClickListener(v -> {
-            // Handle Mentioned Click
         });
 
         assigned.setOnClickListener(v -> {
-            // Handle Assigned Click
         });
 
         reviewRequest.setOnClickListener(v -> {
-            // Handle Review Requested Click
         });
         btnCancel.setOnClickListener(v -> switchToFragment(0));
 

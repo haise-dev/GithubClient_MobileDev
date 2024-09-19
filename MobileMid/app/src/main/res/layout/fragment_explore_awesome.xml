@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@android:color/black">
 
-    <!-- Back Button and Title Layout -->
     <LinearLayout
         android:id="@+id/backButtonLayout"
         android:layout_width="match_parent"
@@ -17,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Back Button -->
         <ImageView
             android:id="@+id/backButton"
             android:layout_width="24dp"
@@ -26,7 +24,6 @@
             android:contentDescription="Back"
             app:tint="@android:color/holo_blue_light" />
 
-        <!-- Title Text -->
         <TextView
             android:id="@+id/awesome_back"
             android:layout_width="wrap_content"
@@ -37,7 +34,6 @@
             android:textSize="18sp" />
     </LinearLayout>
 
-    <!-- Awesome Title -->
     <TextView
         android:id="@+id/awesomeTitle"
         android:layout_width="wrap_content"
@@ -51,7 +47,6 @@
         app:layout_constraintTop_toBottomOf="@id/backButtonLayout"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Awesome Image -->
     <ImageView
         android:id="@+id/awesomeImage"
         android:layout_width="match_parent"
@@ -64,7 +59,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Description Card -->
     <LinearLayout
         android:id="@+id/descriptionCard"
         android:layout_width="match_parent"
@@ -79,7 +73,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- User Info -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,7 +81,6 @@
             android:textSize="14sp"
             android:textStyle="bold" />
 
-        <!-- List Description -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,7 +89,6 @@
             android:textSize="14sp"
             android:layout_marginTop="8dp" />
 
-        <!-- Stats -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -105,7 +96,6 @@
             android:gravity="center_vertical"
             android:layout_marginTop="8dp">
 
-            <!-- Star Icon and Count -->
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -119,7 +109,6 @@
                 android:textColor="@android:color/white"
                 android:layout_marginStart="8dp" />
 
-            <!-- Contributor Info -->
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -135,7 +124,6 @@
                 android:layout_marginStart="8dp" />
         </LinearLayout>
 
-        <!-- Star Button -->
         <Button
             android:id="@+id/starButton"
             android:layout_width="wrap_content"

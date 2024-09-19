@@ -1,0 +1,13 @@
+ modified:   MobileMid/app/src/main/java/vn/edu/usth/mobilemid/HomeShortcutsFragment.java
+        modified:   MobileMid/app/src/main/res/drawable/ic_more_below.xml
+        modified:   MobileMid/app/src/main/res/drawable/rounded_button.xml
+        modified:   MobileMid/app/src/main/res/layout/fragment_explore.xml
+        modified:   MobileMid/app/src/main/res/layout/fragment_explore_awesome.xml
+        modified:   MobileMid/app/src/main/res/layout/fragment_explore_trending_rep.xml
+        modified:   MobileMid/app/src/main/res/layout/fragment_home_discussions.xml
+        modified:   MobileMid/app/src/main/res/layout/fragment_home_issues.xml
+        modified:   MobileMid/app/src/main/res/layout/fragment_home_project.xml
+        modified:   MobileMid/app/src/main/res/layout/fragment_profile_status.xml
+        modified:   MobileMid/app/src/main/res/values-night/themes.xml
+        modified:   MobileMid/app/src/main/res/values/strings.xml
+        modified:   MobileMid/app/src/main/res/values/themes.xml

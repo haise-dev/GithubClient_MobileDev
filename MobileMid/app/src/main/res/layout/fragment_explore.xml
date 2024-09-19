@@ -44,7 +44,6 @@
             android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp">
 
-            <!-- Search Icon -->
             <ImageView
                 android:id="@+id/searchIcon"
                 android:layout_width="30dp"
@@ -53,7 +52,6 @@
                 android:layout_marginEnd="8dp"
                 app:tint="@color/white" />
 
-            <!-- EditText for Search -->
             <EditText
                 android:id="@+id/searchEditText"
                 android:layout_width="match_parent"

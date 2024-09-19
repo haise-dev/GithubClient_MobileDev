@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:background="@color/black">
 
-    <!-- Top bar filling the width and staying on top -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +13,6 @@
         android:background="@color/dark_gray"
         android:padding="8dp">
 
-        <!-- Cancel Button -->
         <TextView
             android:id="@+id/back_button"
             android:layout_width="wrap_content"
@@ -27,7 +25,6 @@
             android:gravity="start"
             android:layout_marginStart="8dp" />
 
-        <!-- Title Text (Center aligned) -->
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
@@ -38,7 +35,6 @@
             android:layout_gravity="center"
             android:gravity="center" />
 
-        <!-- Save Button -->
         <TextView
             android:id="@+id/tv_save"
             android:layout_width="wrap_content"
@@ -83,14 +79,12 @@
             android:padding="8dp" />
     </LinearLayout>
 
-    <!-- LinearLayout to wrap the new section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Remaining characters text -->
         <TextView
             android:id="@+id/tv_char_count"
             android:layout_width="wrap_content"
@@ -99,7 +93,6 @@
             android:textSize="12sp"
             android:textColor="@android:color/darker_gray" />
 
-        <!-- Container for Busy switch and description -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,7 +102,6 @@
             android:padding="8dp"
             android:layout_marginTop="16dp">
 
-            <!-- Busy Text -->
             <TextView
                 android:id="@+id/tv_busy"
                 android:layout_width="0dp"
@@ -121,7 +113,6 @@
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp" />
 
-            <!-- Busy Switch -->
             <Switch
                 android:id="@+id/switch_busy"
                 android:layout_width="48dp"
@@ -129,7 +120,6 @@
                 android:checked="true" />
         </LinearLayout>
 
-        <!-- Description Text -->
         <TextView
             android:id="@+id/tv_description"
             android:layout_width="match_parent"
@@ -141,14 +131,12 @@
 
     </LinearLayout>
 
-    <!-- LinearLayout to wrap the Clear after and Visibility options -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Container for Clear after... option -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -158,7 +146,6 @@
             android:padding="16dp"
             android:layout_marginTop="16dp">
 
-            <!-- Clear after Text -->
             <TextView
                 android:id="@+id/tv_clear_after"
                 android:layout_width="0dp"
@@ -170,7 +157,6 @@
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp" />
 
-            <!-- Clear after Dropdown Text -->
             <TextView
                 android:id="@+id/tv_clear_after_value"
                 android:layout_width="wrap_content"
@@ -182,7 +168,6 @@
                 android:paddingEnd="8dp" />
         </LinearLayout>
 
-        <!-- Container for Visibility option -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -192,7 +177,6 @@
             android:padding="16dp"
             android:layout_marginTop="8dp">
 
-            <!-- Visibility Text -->
             <TextView
                 android:id="@+id/tv_visibility"
                 android:layout_width="0dp"
@@ -204,7 +188,6 @@
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp" />
 
-            <!-- Visibility Dropdown Text -->
             <TextView
                 android:id="@+id/tv_visibility_value"
                 android:layout_width="wrap_content"
