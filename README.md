@@ -1,2 +1,2 @@
 # GithubClient_MobileDev
-Github Client replication - Mobile Developer Midterm project
+Github Client replication - Mobile App Development Midterm project
