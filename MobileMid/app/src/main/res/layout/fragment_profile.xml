@@ -14,23 +14,6 @@
         android:id="@+id/fragment_profile"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/timeTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:text="20:39"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
-        <ImageView
-            android:id="@+id/exploreTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/gear_upload" />
 
         <LinearLayout
             android:id="@+id/account_status"

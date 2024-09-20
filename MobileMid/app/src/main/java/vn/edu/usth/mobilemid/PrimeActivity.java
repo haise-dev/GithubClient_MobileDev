@@ -27,6 +27,10 @@ public class PrimeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_prime);
+        if (getSupportActionBar() !=null){
+            getSupportActionBar().hide();
+        }
+        setContentView(R.layout.activity_prime);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

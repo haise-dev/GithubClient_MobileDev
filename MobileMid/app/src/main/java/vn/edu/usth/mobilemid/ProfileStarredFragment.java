@@ -16,6 +16,7 @@ import android.widget.TextView;
  */
 public class ProfileStarredFragment extends Fragment {
     private TextView go_profileLayout;
+    private TextView go_explore;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -64,6 +65,9 @@ public class ProfileStarredFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile_starred, container, false);
         go_profileLayout = view.findViewById(R.id.back_button);
         go_profileLayout.setOnClickListener(v -> switchToFragment(3));
+
+        go_explore = view.findViewById(R.id.exploreButton);
+        go_explore.setOnClickListener(v -> switchToFragment(2));
         return view;
     }
     private void switchToFragment(int position){
